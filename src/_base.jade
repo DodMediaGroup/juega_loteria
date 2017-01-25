@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width")
+
+        title Juegue Limpio _ Loteria de Boyacá
+
+        link(rel="shortcut icon",href="images/logos/favicon.ico",type="image/x-icon")
+        link(rel="icon",href="images/logos/favicon.ico",type="image/x-icon")
+
+        link(href="vendor/normalize.css",rel="stylesheet")
+
+        
+        link(rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.css?v=2.1.5")
+        link(rel="stylesheet" type="text/css" href="vendor/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5")
+        <!-- Latest compiled and minified CSS -->
+        link(rel="stylesheet", href="vendor/bootstrap.css")
+
+        link(href="css/main.css",rel="stylesheet")
+        script(src="vendor/jquery.min.js") 
+
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            
+    body.row.center-xs(style="background: url(images/fondo.jpg) no-repeat center;  background-size: cover;")
+        div#fb-root
+        script
+            include script.js
+        include _header
+
+        section.content.limiter__container
+            block content
+
+        section.menu-responsive
+            img#btn-menu(src="images/icons/menu.png", alt="")
+
+        include _footer
+
+        script(src="vendor/bootstrap.min.js")
+        script(src="vendor/fancybox/jquery.fancybox.js?v=2.1.5")
+        script(src="vendor/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5")
+        script(src="js/main.js")
+        script(src="vendor/parallax.js")

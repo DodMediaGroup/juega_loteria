@@ -1,0 +1,26 @@
+extends _base
+
+block content
+    section.social.row.center-xs.top-xs.around-xs
+        .col-xs-12.col-md-4(style="padding-left: 20px;")
+            .header-social.face.row.start-xs
+                img.to-svg(src="images/icons/facebook-2.png", alt="")
+                h2 Facebook 
+            .content-plugin
+                div.fb-page(data-href="https://www.facebook.com/LoteriaBoyaca/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true")
+                    blockquote.fb-xfbml-parse-ignore(cite="https://www.facebook.com/LoteriaBoyaca/")
+                        a(href="https://www.facebook.com/LoteriaBoyaca/")
+        .col-sm-xs.col-md-4(style="padding-left: 20px;")
+            .header-social.twitter.row.start-xs
+                img.to-svg(src="images/icons/twitter-2.png", alt="")
+                h2 Twitter
+            .content-plugin
+                a.twitter-timeline(data-height="500" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/LoteriadeBoyaca") Loteria de Boyaca
+        .col-xs-12.col-md-4
+            .header-social.instagram.row.start-xs
+                img.to-svg(src="images/icons/instagram.png", alt="")
+                h2 Instagram
+            .content-plugin
+                div(style="position: relative; height: 16px; overflow: hidden; padding-top:200%;")
+                    iframe(src="//widgets-code.websta.me/w/d95cb5f764b6?ck=MjAxNi0wOS0wOVQwNTozNjoxMi4xNjda" allowtransparency="true" frameborder="0" scrolling="no" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;")
+                div.line-end

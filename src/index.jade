@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width")
+
+        title Juegue Limpio _ Loteria de Boyacá
+
+        link(rel="shortcut icon",href="images/logos/favicon.ico",type="image/x-icon")
+        link(rel="icon",href="images/logos/favicon.ico",type="image/x-icon")
+
+        link(href="vendor/normalize.css",rel="stylesheet")
+
+            
+        link(href="css/main.css",rel="stylesheet")
+
+        script(src="vendor/jquery.min.js")
+
+    body.row.center-xs(style="background: url(images/fondo-index.jpg) no-repeat center;  background-size: cover;")
+        include _header
+
+        section.content.limiter__container
+            include _social-icons
+            section.row.center-xs.middle-xs.index
+                .col-xs
+                    a(href="xena.html")
+                        img(src="images/xena-name.png", alt="")
+                #scene.scene
+                    ul
+                        li.col-xs.layer(data-depth="0.40")
+                            img.xena(src="images/xena.png", alt="")
+        section.menu-responsive
+            img#btn-menu(src="images/icons/menu.png", alt="")
+
+        include _footer
+
+            
+        script(src="js/main.js")
+        script(src="vendor/parallax.js") 
+    

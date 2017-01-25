@@ -1,0 +1,23 @@
+.social-icons{
+	position: fixed;
+	background: #353535;
+	padding: @padding/2;
+	width: 50px;
+	right: 3%;
+	top: 40%;
+	a{
+		svg{
+			padding: 6px 0;
+			transition: all .6s;
+			path{
+				transition: all .6s;
+			}
+			&:hover{
+				path{
+					fill: @color-green;
+					stroke: @color-green-light;
+				}
+			}
+		}
+	}
+}

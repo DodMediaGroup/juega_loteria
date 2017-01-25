@@ -1,0 +1,47 @@
+.header{
+	transition: all .4s;
+	.responsive(@screen-sm,{
+		width: 100%;
+		z-index: 9;
+		});
+	.menu{
+	margin-top: -15px;
+	transition: all .4s;
+	.responsive(@screen-sm,{
+		margin-top: -200%;
+		width: 100%;
+		transition: all .3s;
+		});
+		@import url(_menu.less);
+	}
+	 .logos{
+	 	padding: @padding 0;
+	 	transition: all .4s;
+	 	.logo{
+			padding: 0 @padding;
+			height: 80px;
+			width: auto;
+			transition: all .4s;
+	 	}
+	 }
+}
+.menu-responsive{
+	display: none;
+	position: absolute;
+	right: 15px;
+	top: 90px;
+	cursor: pointer;
+	z-index: 999;
+	.responsive(@screen-sm{
+		display: block;
+		position: fixed;
+		});
+	img{
+		height: 35px;
+		width: 50px;
+		cursor: pointer;
+	}
+}
+.activar-menu{
+	margin-top: 20px !important;
+}

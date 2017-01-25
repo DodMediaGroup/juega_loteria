@@ -1,0 +1,54 @@
+ul{
+	padding-left: 60px; 
+	height: 80px;
+	transition: all .4s;
+	.responsive(@screen-sm,{
+		display: block;
+		background: #000;
+		height: auto;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		});
+	li{
+		padding-left: @padding;
+		border: none;
+		transition: all .5s;
+		.responsive(@screen-sm,{
+			padding-top: @padding;
+			border-bottom: 2px solid @color-red;
+			&:hover{
+				background-color: @color-red;
+				width: 100%;
+			}
+			});
+		a{
+			color: @color-white;
+			p{
+				font-size: @font-size-menu;
+				font-weight: @font-weight-menu;
+				height: 40px;
+				margin-top: 20px;
+				&::after{
+					padding-left: @padding;
+					color: @color-white;
+					content: "//";
+					.responsive(@screen-sm,{
+						color: transparent;
+					});
+				}
+				
+			}
+			.last{
+				&::after{
+					content: "";
+				}
+			}
+		}
+		&:hover{
+			background: url(../images/fondo-menu.png) center no-repeat;
+			background-size: cover;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,255 @@
+.index{
+	margin-top: 0;
+	.xena{
+		max-width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+}
+.content-juegue{
+	margin-top: 60px;
+	margin-bottom: 80px;
+	.responsive(@screen-sm,{
+		padding: @padding @padding*2;
+		});
+	.left-content{
+		margin-top: 20px;
+		padding-right: @padding;
+		.responsive(@screen-sm,{
+		padding-bottom: @padding*2;
+		});
+		h4{
+			cursor: pointer;
+			color: @color-white;
+			text-align: left;
+			font-size: 18px;
+			padding: @padding/1.5;
+			font-weight: normal;
+			.responsive(@screen-sm,{
+				font-size: 16px
+				});
+			&::before{
+				content: url(../images/icons/plus.png);
+				height: 18px;
+				padding-right: 5px;
+			}
+			&:hover{
+				font-weight: bold;
+				font-size: 16px;
+			}
+			&:hover::before{
+				content: url(../images/icons/plus-green.png);
+			}
+		}
+	}
+	.right-content{
+		color: @color-white;
+		text-align: left;
+		overflow-y: scroll;
+		padding-right: @padding;
+		height: 400px;
+		h1,h2,h3,h4,h5{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 20px;
+			.responsive(@screen-sm,{
+				font-size: 16px
+				});
+		}
+	}
+}
+.deportistas{
+	margin-bottom: 50px;
+	.item-deportista{
+		text-align: -webkit-center;
+		text-align: -moz-center;
+		aling-content: center;
+		a{
+			height: 400px;
+			width: 400px;
+			.bkg-item{
+				transition: all .4s ease;
+			&:hover{
+				-webkit-transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				transform: scale(1.2);
+				-webkit-filter: contrast(140%); /* Chrome, Safari, Opera */
+    			filter: contrast(140%);
+				}
+			}
+		}
+	}
+}
+.description-deportista{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	.text-deportista{
+		padding-left: @padding*3;
+		color: @color-white;
+		text-align: left;
+		.title{
+			font-size: 35px;
+			font-weight: normal;
+		}
+		.title-2{
+			font-size: 24px;
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+		h1,h2,h3,h4{
+			font-size: 24px;
+			font-weight: normal;
+			margin-bottom: 15px;
+		}
+		h5{
+			font-size: 20px;
+			font-weight: normal;
+			margin-bottom: 15px;
+		}
+		h6{
+			font-size: 18px;
+			font-weight: normal;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 20px;
+			margin-bottom: 15px;
+			text-align: justify;
+			padding-right: @padding;
+		}
+		img{
+			height: 150px;
+			width: auto;
+			margin-right: @padding;
+		}
+	}
+
+}
+.denuncia{
+	margin-top: 40px;
+	color: @color-white;
+	padding-bottom: 50px;
+	margin-bottom: 80px;
+	.responsive(@screen-sm,{
+		padding: @padding @padding*2;
+		});
+	h3{
+		margin-top: 30px;
+		padding-left: @padding;
+		position: absolute;
+		margin-bottom: 15px;
+	}
+	p{
+		font-size: 20px;
+		strong{
+			font-size: 20px;
+		}
+	}
+	strong{
+		font-size: 22px;
+	}
+}
+.video{
+	margin-top: 60px;
+	margin-bottom: 50px;
+	.responsive(@screen-sm,{
+		padding: @padding @padding*2;
+		});
+	iframe{
+		border: none;
+		border: medium-none;
+	}
+	h2{
+		text-align: left;
+		color: @color-white;
+		font-size: 35px;
+		padding: @padding 0;
+		font-weight: normal; 
+	}
+	.videos{
+		iframe{
+			margin-right: @padding;
+			border: none;
+			border: medium-none;
+		}
+	}
+}
+.social{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	.responsive(@screen-sm,{
+		padding: @padding/2 @padding*4;
+		});
+	.header-social{
+		width: 95%;
+		padding: @padding*2;
+	}
+	.face{
+			background: #3b5998;
+	}
+	.twitter{
+			background: #55acee;
+	}
+	.instagram{
+			background: #953694;
+	}
+	h2{
+		color: #fff;
+		font-size: 26px;
+		padding-left: @padding*1.5;
+	}
+	.content-plugin{
+		margin-bottom: 15px;
+		padding-right: 20px;
+		position: relative;
+		.responsive(@screen-sm,{
+			margin-bottom: 30px;
+		});
+	}
+}
+.line-end{
+	z-index: 9;
+    margin-top: -30px;
+    height: 30px;
+    width: 94%;
+    background-color: #953694;
+    position: absolute;
+    .responsive(@screen-sm,{
+		width: 100% !important;
+    	});
+}
+.form-denuncie{
+	input{
+		width: 90%;
+		margin: 20px 0 20px -5%;
+		height: 30px;
+		outline: 0;
+		border: none;
+		padding: 5px;
+		color: #000;
+	}
+	textarea{
+		width: 90%;
+		margin: 20px 0 0 -5%;
+		height: 200px;
+		outline: 0;
+		border: none;
+		padding: 5px;
+		color: #000;
+	}
+	button{
+		border: none;
+		font-weight: bold;
+	}
+}
+
+.nav-tabs > li {
+	height: 40px;
+}
+.tab-pane{
+	p,strong{
+		text-align: justify;
+	}
+}

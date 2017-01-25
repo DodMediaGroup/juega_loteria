@@ -1,0 +1,11 @@
+{
+  "name": "juega-legal",
+  "version": "1.0.0",
+  "description": "Web para promober el deporte y la salud en Boyacá promovido por la Loteria de Boyacá",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Vega",
+  "license": "ISC"
+}
